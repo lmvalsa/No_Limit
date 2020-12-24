@@ -1,0 +1,304 @@
+/* Variables*/
+/*Base structure*/
+body {
+  display: flex;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5); }
+
+.cover-container {
+  max-width: 60rem; }
+
+/*Header*/
+.header__logo {
+  height: 50px; }
+
+.nav-masthead .nav-link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent; }
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: red; }
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 2rem; }
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff; }
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left; }
+  .nav-masthead {
+    float: right; } }
+
+footer .footer__ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 20px 0px; }
+
+footer .footer__ul i {
+  color: red;
+  font-size: 24px;
+  padding: 1rem; }
+
+/*Home page*/
+.main__h1 {
+  font-size: 20px;
+  letter-spacing: 15px;
+  background-color: black;
+  border: solid 1px white;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center; }
+
+.modal__master {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px;
+  border-top: solid red 1px; }
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: black;
+  border: 2px solid red;
+  color: white;
+  justify-content: center;
+  border-radius: 20px; }
+
+.modal__form__item {
+  margin: 10px 10px; }
+
+.modal__form__fieldset {
+  border: 1px solid red;
+  border-radius: 5px;
+  margin: 15px 0px;
+  text-align: left; }
+
+.modal__form__button {
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 5px 20px; }
+
+.modal__form__button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer; }
+
+.modal-title {
+  color: black; }
+
+.btn-primary {
+  color: #fff;
+  background-color: black;
+  border-color: white;
+  margin-top: 10px; }
+
+/*About Us
+
+.aumaster {
+  display: grid;
+}
+
+.audiv1 {
+  display: grid;
+  place-items: center;
+  background-color: black;
+  border: 1px solid red;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  word-spacing: 20px;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
+.audiv2 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border: red solid 1px;
+  padding: 30px;
+  text-transform: uppercase;
+}
+
+.audiv3 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border: red solid 1px;
+  padding: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.audiv4 {
+  text-align: center;
+}
+
+.space {
+  width: 49.5%;
+}
+.space1 {
+  width: 49.5%;
+}
+
+.audiv5 {
+  background-color: black;
+  color: white;
+  text-align: justify;
+  border: white solid 1px;
+  padding: 30px;
+}
+
+/*Personal trainers
+
+.cover-container2 {
+  max-width: 90rem;
+}
+
+.ptmaster {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 5px;
+  justify-content: center;
+  padding: 25px 0px;
+}
+
+.ptdiv {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.ptdiv h2 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 20px;
+}
+
+.ptimg {
+  margin: 10px 0px;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.ptimg1 {
+  size: 50%;
+}
+
+/*Shop
+
+.stitle {
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.smaster {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
+  padding: 50px 25px;
+}
+
+.sdiv {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 5px;
+}
+
+.sdivt1 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  background-color: black;
+}
+
+.sdivt {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+  height: 150px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 5px;
+  background-color: black;
+}
+
+/*Contact us
+
+.cumaster {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  justify-content: space-around;
+  padding: 20px 10px;
+  border: none;
+}
+
+.cudiv {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: black;
+  border: 2px solid red;
+  color: white;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+iframe {
+  height: 80%;
+  margin-top: 20px;
+  border: 1px solid red;
+}
+
+form {
+  padding: 5px;
+  margin: 10px 0px;
+}
+
+fieldset {
+  border: 1px solid red;
+  border-radius: 5px;
+  margin: 15px 0px;
+}
+
+.cudiv1 {
+  margin: 10px 10px;
+}
+
+button {
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 5px 20px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}*/
